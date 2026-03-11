@@ -1,0 +1,8 @@
+let oxigenio = Number(prompt("insira a quantidade de oxigenio restante ( em litros)"));
+let pessoas = Number (prompt(" insira a quantidade de pessoas em marte"));
+const consumoDiario = 15; // litros por pessoa.
+// consumo total é baseado na quantidade de pessoas multiplicado pelo consumo diario por pessoa
+let comsumoTotalBase = pessoas * consumoDiario;
+let diasRestantes = oxigenio / comsumoTotalBase;
+
+alert(`relatório de marte: ${diasRestantes.toFixed(0)}dias de oxigenio`);
